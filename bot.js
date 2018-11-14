@@ -10,10 +10,10 @@ function randomIntFromInterval(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 client.on('message', msg => {
-    let ownerid = 'اي دي حسابك الاصلي';
+    let ownerid = '434445470946033665';
     if(msg.author.id === ownerid){
         if(msg.content === "farm"){
-            if(msg.channel.id !== "اي دي شات السبام") return;
+            if(msg.channel.id !== "512373609210183700") return;
             let count = 0;
             farm.set(`farm`, 'true')
             setInterval(function(){
@@ -25,7 +25,7 @@ client.on('message', msg => {
             }, randomIntFromInterval(1119, 2119))
         }
         if(msg.content.startsWith(`credits`)){
-            if(msg.channel.id !== "اي دي شات الكريدت") return;
+            if(msg.channel.id !== "512373609210183700") return;
             if(msg.isMentioned(client.user)){
                 farm.set(`farm`, 'blah blah')
                 let args = msg.content.split(` `)
